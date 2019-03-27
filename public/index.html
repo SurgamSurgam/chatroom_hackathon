@@ -1,59 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Twilio Server Starter Kit</title>
+  <title>Queue N' A</title>
 
-  <link rel="stylesheet" crossorigin="anonymous"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u">
+  
 
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <div class="container">
-    <h1>Twilio Server Starter Kit Environment Setup</h1>
+    <a id="notifyDemoButton" class="btn btn-lg" href="/notify/">About Me</a>
+    <h1>Welcome to Queue N' A</h1>
 
-    <h2>Account Information</h2>
-    <table class="table table-striped">
-      <tr>
-        <td class="config-key">TWILIO_ACCOUNT_SID</td>
-        <td class="config-value" id="twilioAccountSid"></td>
-      </tr>
-      <tr>
-        <td class="config-key">TWILIO_API_KEY</td>
-        <td class="config-value" id="twilioApiKey"></td>
-      </tr>
-      <tr>
-        <td class="config-key">TWILIO_API_SECRET</td>
-        <td class="config-value" id="twilioApiSecret"></td>
-      </tr>
-    </table>
 
-    <h2>Products</h2>
-    <table class="table table-striped">
-      <tr>
-        <td class="config-product">Notify</td>
-        <td class="config-key">TWILIO_NOTIFICATION_SERVICE_SID</td>
-        <td class="config-value" id="twilioNotificationServiceSid"></td>
-      </tr>
-      <tr>
-        <td class="config-product">Chat</td>
-        <td class="config-key">TWILIO_CHAT_SERVICE_SID</td>
-        <td class="config-value" id="twilioChatServiceSid"></td>
-      </tr>
-      <tr>
-        <td class="config-product">Sync</td>
-        <td class="config-key">TWILIO_SYNC_SERVICE_SID</td>
-        <td class="config-value" id="twilioSyncServiceSid"></td>
-      </tr>
-    </table>
+    <h3>An app for developers to help other developers troubleshoot and problem solve.</h3>
+    
+  <p>Enter Username:</p>
+  <form className = 'username'>
+<input type="text" name='username'> 
 
+<<<<<<< HEAD
     <h1>Demos</h1>
       <a id="videoDemoButton" class="btn btn-lg" href="/video/">Video</a>
       <a id="syncDemoButton" class="btn btn-lg"  href="/sync/">Sync</a>
       <a id="notifyDemoButton" class="btn btn-lg" href="/notify/">Notify</a>
       <a id="chatDemoButton" class="btn btn-lg" href="/chat/">Chat</a>
     </div>
+=======
+  </form>
+
+  <p>Please select which channel you'd like to enter:
+  </p>
+  <select className = 'dropdown'>
+    <option value="emp"></option>
+      <option value="room1">Javascript</option>
+      <option value="room2">Swift</option>
+      <option value="room3">Java</option>
+      <option value="room4">Ruby</option>
+    </select>
+   
+    <button>Submit</button>
+  </div>
+>>>>>>> 5b170ef9bd6279ce6c1a9d22a60793b6aae44d68
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script crossorigin="anonymous"
