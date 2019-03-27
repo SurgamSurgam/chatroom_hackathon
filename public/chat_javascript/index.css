@@ -18,18 +18,27 @@ html, body {
   width: 100%;
 }
 
+.chatbox {
+  display: flex;
+}
+
+/* messages style */
+
 .message_container {
   height: 100vh;
   background-color: #2C2C2C;
   font-family: 'Xolonium';
   font-style: bold;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding-left: 15%;
 }
 
 #messages {
   background-color: #202020;
   padding: 10px;
   width: 800px;
-  margin: 0 auto;
 }
 
 #messages p {
@@ -37,19 +46,15 @@ html, body {
   padding: 0;
 }
 
-.info {
-  margin: 5px 0;
-  font-style: italic;
-}
 
 .message-container {
+  display: flex;
+  align-self: center;
   margin: 5px 0;
   color: #fff;
 }
 
 .message-container .username {
-  display: inline-block;
-  margin-right: 5px;
   font-weight: bold;
   color: #849091;
 }
@@ -60,16 +65,18 @@ html, body {
 }
 
 .message-container .username.me {
-  display: inline-block;
+  display: flex;
   margin-right: 5px;
 }
 
-.channel_search_container {
-  position: absolute;
-  width: 250px;
-  background-color: red;
-  height: 100vh;
+#chat-input {
+  width: 800px;
+  background-color: #fff;
 }
+
+/* channel box style */
+
+
 
 .channel_list {
   display: flex;
@@ -82,7 +89,8 @@ html, body {
 .channel_search_container {
   display: flex;
   flex-direction: column;
-  flex: auto;
+  /* flex: auto; */
+  background-color: red;
 }
 
 .channel_item {
@@ -97,14 +105,33 @@ html, body {
   font-size: 15px;
 }
 
+/* add channel */
+
 .add_channel_container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   flex-shrink: 0;
+  width: 100%;
   align-self: flex-end;
+}
+
+.add_channel_container:hover {
+  background-color: orange;
+}
+
+.add_channel {
+  grid-column: 2;
 }
 
 .add_channel_button {
   background-color: pink;
+  grid-column: 3;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  align-self: center;
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  margin-left: 5px;
 }
