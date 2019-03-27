@@ -16,14 +16,14 @@
     <h3>An app for developers to help other developers troubleshoot and problem solve.</h3>
     
   <p>Enter Username:</p>
-  <form>
+  <form className = 'username'>
 <input type="text" name='username'> 
 
   </form>
 
   <p>Please select which channel you'd like to enter:
   </p>
-  <select>
+  <select className = 'dropdown'>
     <option value="emp"></option>
       <option value="room1">Javascript</option>
       <option value="room2">Swift</option>
@@ -31,7 +31,7 @@
       <option value="room4">Ruby</option>
     </select>
    
-    <a id="chatDemoButton" class="btn btn-lg" href="/chat/">Chat</a>
+    <button>Submit</button>
   </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
