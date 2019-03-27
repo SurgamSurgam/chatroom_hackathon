@@ -1,5 +1,7 @@
 require("dotenv").load();
-require('dotenv').config() 
+
+require("dotenv").config();
+
 // Node/Express
 const express = require("express");
 const http = require("http");
@@ -31,4 +33,4 @@ server.listen(port, function() {
 
 module.exports = app;
 
-console.log("hi");
+console.log('hi');
