@@ -1,4 +1,5 @@
 require("dotenv").load();
+require("dotenv").config();
 
 // Node/Express
 const express = require("express");
@@ -30,5 +31,3 @@ server.listen(port, function() {
 });
 
 module.exports = app;
-
-console.log("hi");
