@@ -1,90 +1,110 @@
+@font-face {
+  font-family: 'Xolonium';
+  src: url('../styles/severin-meyer_xolonium/Xolonium-Bold.otf');
+  src:
+    url('../styles/severin-meyer_xolonium/Xolonium-Bold.otf')format('opentype'),
+    url('../styles/severin-meyer_xolonium/Xolonium-Bold.ttf')format('truetype'),
+    url('../styles/severin-meyer_xolonium/Xolonium-Regular.otf')format('opentype'),
+    url('../styles/severin-meyer_xolonium/Xolonium-Regular.ttf')format('truetype');
+}
+
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 html, body {
-  padding:0;
-  margin:0;
-  height:100%;
-  width:100%;
-  color:#dedede;
-  background-color: #849091;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
-header {
-  width:100%;
-  position:absolute;
-  text-align:center;
-  bottom:20px;
-}
-
-header a, header a:visited {
-  font-size:18px;
-  color:#dedede;
-  text-decoration:none;
-}
-
-header a:hover {
-  text-decoration:underline;
-}
-
-section {
-  height:70%;
-  background-color:#2B2B2A;
-}
-
-section input {
-  display:block;
-  height:52px;
-  width:800px;
-  margin:10px auto;
-  outline:none;
-  background-color:transparent;
-  border:none;
-  border-bottom:1px solid #2B2B2A;
-  padding:0;
-  font-size:42px;
-  color:#eee;
+.message_container {
+  height: 100vh;
+  background-color: #2C2C2C;
+  font-family: 'Xolonium';
+  font-style: bold;
 }
 
 #messages {
-  background-color:#232323;
-  padding:10px;
-  height:100%;
-  width:800px;
-  margin:0 auto;
-  overflow-y:auto;
+  background-color: #202020;
+  padding: 10px;
+  width: 800px;
+  margin: 0 auto;
 }
 
 #messages p {
-  margin:5px 0;
-  padding:0;
+  margin: 5px 0;
+  padding: 0;
 }
 
 .info {
-  margin:5px 0;
-  font-style:italic;
+  margin: 5px 0;
+  font-style: italic;
 }
 
 .message-container {
-  margin:5px 0;
-  color:#fff;
+  margin: 5px 0;
+  color: #fff;
 }
 
 .message-container .username {
-  display:inline-block;
-  margin-right:5px;
-  font-weight:bold;
-  color:#849091;
+  display: inline-block;
+  margin-right: 5px;
+  font-weight: bold;
+  color: #849091;
 }
 
 .me, .username.me {
-  font-weight:bold;
-  color:cyan;
+  font-weight: bold;
+  color: cyan;
 }
 
 .message-container .username.me {
-  display:inline-block;
-  margin-right:5px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.channel_search_container {
+  position: absolute;
+  width: 250px;
+  background-color: red;
+  height: 100vh;
+}
+
+.channel_list {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-inline-start: 0px;
+  list-style-type: none;
+}
+
+.channel_search_container {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}
+
+.channel_item {
+  height: 50px;
+}
+
+.channel_item:hover {
+  background-color: orange;
+}
+
+.channel_search_box {
+  font-size: 15px;
+}
+
+.add_channel_container {
+  flex-shrink: 0;
+  align-self: flex-end;
+}
+
+.add_channel_button {
+  background-color: pink;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
