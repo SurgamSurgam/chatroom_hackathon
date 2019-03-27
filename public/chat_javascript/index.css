@@ -26,19 +26,19 @@ html, body {
 
 .message_container {
   height: 100vh;
-  background-color: #2C2C2C;
+  background-color: #252525;
   font-family: 'Xolonium';
   font-style: bold;
   align-items: center;
   justify-content: center;
   flex-grow: 1;
-  padding-left: 15%;
+  padding-left: 10%;
 }
 
 #messages {
-  background-color: #202020;
+  background-color: #181818;
   padding: 10px;
-  width: 800px;
+  width: 900px;
 }
 
 #messages p {
@@ -61,7 +61,7 @@ html, body {
 
 .me, .username.me {
   font-weight: bold;
-  color: cyan;
+  color: #65e52c;
 }
 
 .message-container .username.me {
@@ -70,13 +70,17 @@ html, body {
 }
 
 #chat-input {
-  width: 800px;
+  width: 900px;
   background-color: #fff;
 }
 
 /* channel box style */
 
-
+.channel_head {
+  border-bottom: 1px solid #252525;
+  text-align: center;
+  font-family: sans-serif;
+}
 
 .channel_list {
   display: flex;
@@ -84,17 +88,25 @@ html, body {
   flex-grow: 1;
   padding-inline-start: 0px;
   list-style-type: none;
+  border: 1px solid #252525;
+  font-family: sans-serif;
 }
 
 .channel_search_container {
+  /* padding: 5px; */
   display: flex;
   flex-direction: column;
   /* flex: auto; */
-  background-color: red;
+  background-color: #181818;
+  border: 1px solid #65e52c;
 }
 
 .channel_item {
   height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  border-bottom: 1px solid #252525;
 }
 
 .channel_item:hover {
@@ -121,10 +133,11 @@ html, body {
 
 .add_channel {
   grid-column: 2;
+  font-family: sans-serif;
 }
 
 .add_channel_button {
-  background-color: pink;
+  background-color: #65e52c;
   grid-column: 3;
   text-align: center;
   vertical-align: middle;
