@@ -9,7 +9,7 @@ $(function() {
     videoDemoButton: 'TwilioApiSecret',
     chatDemoButton: 'TwilioChatServiceSid',
     syncDemoButton: 'TwilioSyncServiceSid',
-    notifyDemoButton: 'aboutMe'
+    notifyDemoButton: 'TwilioNotificationServiceSid'
   };
 
   // Field Ids' and Masked Flag
