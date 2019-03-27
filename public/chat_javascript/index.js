@@ -5,9 +5,10 @@ $(function() {
   // Our interface to the Chat service
   var chatClient;
 
-  // A handle to the "general" chat channel - the one and only channel we
+  // A handle to the "Javascript" chat channel - the one and only channel we
   // will have in this sample app
-  var generalChannel;
+  var javascriptChannel;
+  var swiftChannel;
 
   // The server will assign the client a random username - store that value
   // here
@@ -54,30 +55,31 @@ $(function() {
     // Initialize the Chat client
     Twilio.Chat.Client.create(data.token).then(client => {
       chatClient = client;
-      chatClient.getSubscribedChannels().then(createOrJoinGeneralChannel);
+      chatClient.getSubscribedChannels().then(createOrJoinJavascriptChannel);
+      chatClient.getSubscribedChannels().then(createOrJoinSwiftChannel);
     });
   });
 
-  function createOrJoinGeneralChannel() {
-    // Get the general chat channel, which is where all the messages are
+  function createOrJoinJavascriptChannel() {
+    // Get the Javascript chat channel, which is where all the messages are
     // sent in this simple application
-    print('Attempting to join "general" chat channel...');
-    chatClient.getChannelByUniqueName('general')
+    print('Attempting to join "Javascript" chat channel...');
+    chatClient.getChannelByUniqueName('Javascript')
     .then(function(channel) {
-      generalChannel = channel;
-      console.log('Found general channel:');
-      console.log(generalChannel);
+      javascriptChannel = channel;
+      console.log('Found Javascript channel:');
+      console.log(javascriptChannel);
       setupChannel();
     }).catch(function() {
       // If it doesn't exist, let's create it
-      console.log('Creating general channel');
+      console.log('Creating Javascript channel');
       chatClient.createChannel({
-        uniqueName: 'general',
-        friendlyName: 'General Chat Channel'
+        uniqueName: 'Javascript',
+        friendlyName: 'Javascript Chat Channel'
       }).then(function(channel) {
-        console.log('Created general channel:');
+        console.log('Created Javascript channel:');
         console.log(channel);
-        generalChannel = channel;
+        javascriptChannel = channel;
         setupChannel();
       }).catch(function(channel) {
         console.log('Channel could not be created:');
@@ -88,24 +90,25 @@ $(function() {
 
   // Set up channel after it has been found
   function setupChannel() {
-    // Join the general channel
-    generalChannel.join().then(function(channel) {
+    // Join the Javascript channel
+    javascriptChannel.join().then(function(channel) {
       print('Joined channel as '
       + '<span class="me">' + username + '</span>.', true);
     });
 
     // Listen for new messages sent to the channel
-    generalChannel.on('messageAdded', function(message) {
+    javascriptChannel.on('messageAdded', function(message) {
       printMessage(message.author, message.body);
     });
   }
 
-  // Send a new message to the general channel
+  // Send a new message to the Javascript channel
   var $input = $('#chat-input');
   $input.on('keydown', function(e) {
     if (e.keyCode == 13) {
-      generalChannel.sendMessage($input.val())
+      javascriptChannel.sendMessage($input.val())
       $input.val('');
     }
   });
+
 });
