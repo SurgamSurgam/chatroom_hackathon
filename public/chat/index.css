@@ -96,5 +96,21 @@ section input {
 }
 
 .channel_list {
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 0px;
   list-style-type: none;
+}
+
+.channel_item {
+  height: 50px;
+}
+
+.channel_item:hover {
+
+  background-color: orange;
+}
+
+.channel_search_box {
+  font-size: 15px;
 }
