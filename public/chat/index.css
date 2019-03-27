@@ -5,53 +5,17 @@
 html, body {
   padding: 0;
   margin: 0;
-  height: 100%;
   width: 100%;
-  color: #dedede;
-  background-color:  #849091;
-  font-family:  'Helvetica Neue', Helvetica, sans-serif;
 }
 
-header {
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  bottom: 20px;
-}
-
-header a, header a: visited {
-  font-size: 18px;
-  color: #dedede;
-  text-decoration: none;
-}
-
-header a: hover {
-  text-decoration: underline;
-}
-
-section {
-  height: 70%;
-  background-color: #2B2B2A;
-}
-
-section input {
-  display: block;
-  height: 52px;
-  width: 800px;
-  margin: 10px auto;
-  outline: none;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #2B2B2A;
-  padding: 0;
-  font-size: 42px;
-  color: #eee;
+.message_container {
+  height: 100vh;
+  background-color: #2C2C2C
 }
 
 #messages {
-  background-color: #232323;
+  background-color: #202020;
   padding: 10px;
-  height: 100%;
   width: 800px;
   margin: 0 auto;
 }

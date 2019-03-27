@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  
 
-  <section>
+
+  <section class="chatbox">
     <!-- Main channel search box -->
     <div class="channel_search_container">
       <h3 class="channel_head">Channels</h3>
@@ -27,8 +27,11 @@
       </div>
 
     </div>
-    <div id="messages"></div>
-    <input id="chat-input" type="text" placeholder="say anything" autofocus/>
+
+    <div class="message_container">
+      <div id="messages"></div>
+      <input id="chat-input" type="text" placeholder="say anything"/>
+    </div>
   </section>
 
   <script src="https://media.twiliocdn.com/sdk/js/common/v0.1/twilio-common.min.js"></script>
