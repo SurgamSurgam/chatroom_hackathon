@@ -1,5 +1,5 @@
 require("dotenv").load();
-
+require('dotenv').config() 
 // Node/Express
 const express = require("express");
 const http = require("http");
