@@ -52,6 +52,6 @@ const FIRST_NAMES = [
 //     'Zimmerman',
 // ];
 
-const rand = (arr) => arr[Math.floor(Math.random() * arr.length)];
+const rand = arr => arr[Math.floor(Math.random() * arr.length)];
 
 module.exports = () => rand(ADJECTIVES) + rand(FIRST_NAMES);
