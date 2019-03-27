@@ -98,8 +98,15 @@ section input {
 .channel_list {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   padding-inline-start: 0px;
   list-style-type: none;
+}
+
+.channel_search_container {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
 }
 
 .channel_item {
@@ -107,10 +114,21 @@ section input {
 }
 
 .channel_item:hover {
-
   background-color: orange;
 }
 
 .channel_search_box {
   font-size: 15px;
+}
+
+.add_channel_container {
+  flex-shrink: 0;
+  align-self: flex-end;
+}
+
+.add_channel_button {
+  background-color: pink;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
