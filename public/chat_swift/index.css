@@ -39,6 +39,9 @@ html, body {
   background-color: #181818;
   padding: 50px 10px;
   width: 900px;
+  align-self: flex-end;
+  flex-grow: 1;
+  color: #D3D3D3;
 }
 
 #messages p {
@@ -51,6 +54,7 @@ html, body {
   align-self: center;
   margin: 5px 0;
   color: #D3D3D3;
+  flex-shrink: 0;
 }
 
 .message-container .username {
