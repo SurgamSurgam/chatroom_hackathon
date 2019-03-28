@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <title>Queue N' A</title>
-
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100" rel="stylesheet">
 
   <link rel="stylesheet" href="index.css">
 </head>
@@ -11,26 +12,32 @@
   <div class="container">
     <nav>
       <ul>
-        <li><a id="notifyDemoButton" class="btn btn-lg" href="">Home</a></li>
-        <li><a id="notifyDemoButton" class="btn btn-lg" href="/about/">About</a></li>
+        <!-- <li><a id="notifyDemoButton1" class="btn" href="">Queue N'A</a></li> -->
+        <li><a id="notifyDemoButton2" class="btn btn-lg" href="/">Home</a></li>
+        <li><a id="notifyDemoButton3" class="btn btn-lg" href="/about/">About</a></li>
       </ul>
   </nav>
     
     <h1>Welcome to Queue N' A</h1>
+    <div class="small-text">Realtime and Interactive</div>
 
-    <h2>An app for developers to help other developers troubleshoot and problem solve.</h3>
+    <h2>It's time to make it happen. <br>
+      Ask Your Q & help other developers troubleshoot and problem solve.</h3>
 
-  <p>Enter Username:</p>
+  <!-- <p>Enter Username:</p> -->
   
-  <form className="username">
-    <input type="text" name='username'>
-  </form>
+  <div class="username">
+    <input class="effect" type="text" placeholder="Enter Username">
+    <span class="focus-border"></span>
+  </div>
 
   <p>Please select which channel you'd like to enter:</p>
 
 
-  <a id="chatDemoButton" class="btn btn-lg" href="/chat_javascript/">Javascript</a>
-  <a id="chatDemoButton" class="btn btn-lg btn-danger" href="/chat_swift/">Swift</a>
+  <div class="buttons">
+    <a id="chatDemoButton1" class="btn btn-lg" href="/chat_javascript/">Javascript</a>
+    <a id="chatDemoButton2" class="btn btn-lg btn-danger" href="/chat_swift/">Swift</a>
+  </div>
   <!-- <select className = 'dropdown'>
     <option value="emp"></option>
       <option value="room1">Javascript</option>
@@ -52,5 +59,8 @@
     src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"></script>
   <script src="config-check.js"></script>
+  
 </body>
+<div class="bg"></div>
+
 </script>

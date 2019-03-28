@@ -1,21 +1,52 @@
-.config-value.set {
+/* .config-value.set {
     color:seagreen;
 }
 
 .config-value.unset {
     color:darkred;
+} */
+
+/* body, html {
+  height: 100%;
 }
 
+.bg { 
+  background-image: url("https://i.pinimg.com/564x/03/b4/49/03b4496fb74a23e9096760c0f07b3810.jpg");
+  height: 50%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+/* html { 
+  background: url("https://i.pinimg.com/564x/03/b4/49/03b4496fb74a23e9096760c0f07b3810.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
+
+/* .bg {
+  background: url("https://i.pinimg.com/564x/d2/70/ba/d270ba697fd60983831856704d524b7f.jpg") no-repeat center center fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow: hidden;
+} */
+
+
+
 nav {
-  background: rgb(129, 144, 187);
+  /* background: rgb(129, 144, 187); */
   width: 100%;
   font-size: 20px;
-  font-family: "Whitney A", "Whitney B", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 nav ul {
-  padding: 15px;
+  padding: 4px;
   margin: 0;
+  text-align: right;
 }
 
 nav ul li {
@@ -25,32 +56,89 @@ nav ul li {
 }
 
 nav ul li:hover {
-  background: rgb(224, 223, 124); 
+  background: rgb(174, 210, 252); 
 }
 
 nav ul li a {
-  color: rgb(117, 150, 187)
-  text-decoration: none;
-  padding: 12px;
+  color: black;
+  text-decoration:none;
+  padding:12px;
 }
 
 nav ul li a:hover {
-  color: black;
+  color: rgb(156, 145, 145);
   text-decoration: none;
 }
 
 h1 {
-  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  padding-left: 100px;
+}
+
+.small-text {
+  text-align: left;
+  font-family: 'Archivo Black', sans-serif;
+  padding: 0px 33px;
+  margin-left: 71px;
+
 }
 
 h2 {
-  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  text-align: left;
+  font-size: 51px;
+  padding: 0px 40px;
+  margin-left: 59px;
 }
 
 form{
   text-align: center;
 }
 
+.username {
+  margin: 12px 45%; 
+  position: relative;
+} 
+
+input[type="text"]{
+  font: 15px/24px "Lato", Arial, sans-serif; 
+  color: #333; width: 100%; 
+  box-sizing: border-box; 
+  letter-spacing: 1px;}
+
+.effect {
+  border: 0; 
+  padding: 5px 0 7px; 
+  border: 1px solid transparent; 
+  transition: 0.4s;
+}
+
+.effect:focus {
+  padding: 5px 14px 7px; 
+  transition: 0.4s;
+  outline: none;
+}
+
+.effect ~ .focus-border{
+  position: absolute; 
+  height: 0; bottom: 0; 
+  left: 0; width: 100%; 
+  transition: 0.4s; 
+  z-index: -1;
+}
+
+.effect:focus ~ .focus-border{
+  transition: 0.4s; 
+  height: 36px; 
+  border: 2px solid rgb(77, 133, 189); 
+  z-index: 1;
+}
+
 p {
+  text-align: center;
+}
+
+.buttons {
   text-align: center;
 }
