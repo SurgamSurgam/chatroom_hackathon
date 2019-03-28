@@ -5,3 +5,52 @@
 .config-value.unset {
     color:darkred;
 }
+
+nav {
+  background: rgb(129, 144, 187);
+  width: 100%;
+  font-size: 20px;
+  font-family: "Whitney A", "Whitney B", Helvetica, Arial, sans-serif;
+}
+
+nav ul {
+  padding: 15px;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block; 
+  list-style-type: none; 
+  padding: 10px 0; 
+}
+
+nav ul li:hover {
+  background: rgb(224, 223, 124); 
+}
+
+nav ul li a {
+  color: rgb(117, 150, 187)
+  text-decoration: none;
+  padding: 12px;
+}
+
+nav ul li a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+form{
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
